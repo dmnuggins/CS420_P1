@@ -67,9 +67,14 @@ public class Solver {
 
     private static void printInitialState(int[] board) {
         System.out.println("\nInitial State:");
+        int lineMark = 0;
         for(int i = 0;i < 9;i++) {
             System.out.print(board[i] + " ");
+            lineMark++;
+            if(lineMark == 3) {
+                System.out.println();
+                lineMark = 0;
+            }
         }
-        System.out.println();
     }
 }
