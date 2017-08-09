@@ -1,8 +1,23 @@
 import java.util.Scanner;
+import java.util.Comparator;
+import java.util.Iterator;
 
 public class Solver {
 
     private static int[] board;
+
+    private class Node {
+        private int moves;
+        private Board board;
+        private Node prev;
+
+        public Node(Board initState) {
+            moves = 0;
+            prev = null;
+            board = initState;
+
+        }
+    }
 
     private Solver(Board initial) {          // find a solution to the initial board
 
