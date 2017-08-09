@@ -7,15 +7,6 @@ public class Solver {
     private Solver(Board initial) {          // find a solution to the initial board
 
     }
-    private boolean isSolvable() {           // is the initial board solvable?
-        return false;
-    }
-    private int moves() {                    // return min number of moves to solve initial board; -1 if no solution
-        return 0;
-    }
-    private Iterable<Board> solution() {     // return an Iterable of board positions in solution
-        return null;
-    }
 
 
     public static void main(String[] args) {
